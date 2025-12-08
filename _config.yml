@@ -1,0 +1,92 @@
+# Site Settings
+# ====================================
+title: "藏经阁"
+tagline: "收集典籍，记录生活"
+description: "收集典籍，记录生活"
+url: "https://junjiansyu.github.io"
+baseurl: "/Notes"  # GitHub Pages 项目页面需要设置baseurl
+avatar: "/assets/img/avatar.png"
+timezone: "Asia/Shanghai"
+lang: "zh-CN"
+
+# Theme
+remote_theme: cotes2020/jekyll-theme-chirpy
+
+# Collections
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .git
+  - .gitignore
+  - .DS_Store
+  - Thumbs.db
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+# Chirpy theme specific settings
+# ====================================
+
+# Social links (displayed in sidebar)
+social:
+  name: "藏经阁"
+  email: "your-email@example.com"
+  github: "junjiansyu"
+  # twitter: ""  # Optional
+  # linkedin: ""  # Optional
+  # stackoverflow: ""  # Optional
+  # facebook: ""  # Optional
+  # youtube: ""  # Optional
+  # instagram: ""  # Optional
+
+# Theme color (optional, defaults provided by theme)
+# theme_color:
+#   main: "#007bff"
+#   secondary: "#6c757d"
+
+# Comments system (optional)
+# comments:
+#   provider: giscus  # Options: disqus, utterances, giscus
+#   giscus:
+#     repo: "junjiansyu/Notes"
+#     repo_id: ""
+#     category: "Announcements"
+#     category_id: ""
+
+# Default front matter
+defaults:
+  # Posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      # math: true  # Enable math if needed
+      # mermaid: true  # Enable mermaid diagrams if needed
+  
+  # Tabs
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
