@@ -10,7 +10,7 @@ timezone: "Asia/Shanghai"
 lang: "zh-CN"
 
 # Theme
-remote_theme: jekyll/minima@1e8a445
+remote_theme: cotes2020/jekyll-theme-chirpy
 
 # Collections
 collections:
@@ -22,6 +22,7 @@ collections:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-remote-theme
 
 # Exclude files from processing
 exclude:
