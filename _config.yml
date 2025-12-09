@@ -10,7 +10,7 @@ timezone: "Asia/Shanghai"
 lang: "zh-CN"
 
 # Theme
-remote_theme: cotes2020/jekyll-theme-chirpy
+remote_theme: https://github.com/cotes2020/jekyll-theme-chirpy
 
 # Collections
 collections:
